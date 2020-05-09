@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/back_bk0"
+    tools:context=".MainActivity">
+
+    <com.aldrek.digitflip.FlipWidget
+        android:id="@+id/hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:digitColor="@color/colorPrimaryDark"
+
+        app:isFastFlipMain="true"
+        app:numberOfDigits="2" />
+
+    <com.aldrek.digitflip.FlipWidget
+        android:id="@+id/minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:digitColor="@color/colorPrimary"
+        app:isFastFlipMain="true"
+        app:numberOfDigits="2" />
+
+    <com.aldrek.digitflip.FlipWidget
+        android:id="@+id/seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:digitColor="@color/colorLightGreen"
+        app:isFastFlipMain="true"
+        app:numberOfDigits="2" />
+
+
+
+
+</LinearLayout>
